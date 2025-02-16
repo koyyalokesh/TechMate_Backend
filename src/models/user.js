@@ -54,6 +54,13 @@ const userSchema = new mongoose.Schema({
         },
 
     },
+    isPremium :{
+         type:Boolean,
+         deafult: false,
+    },
+    membershipType:{
+        type:String,
+    },
     photoUrl :{
         type: String,
         default:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThW-ztkyKIYQwy7DpWxWYYu-r8YwIm4UbxpQ&s",
