@@ -4,9 +4,8 @@ const paymentRouter = express.Router();
 const razorpayInstance = require('../utils/razorpay')
 const Payment = require('../models/payment');
 const { membershipAmount } = require('../utils/constants');
-const Payment = require('../models/payment');
 const User = require('../models/user');
-const {validateWebhookSignature} = rquire('razorpay/dist/utils/razorpay-utils')
+const {validateWebhookSignature} = require('razorpay/dist/utils/razorpay-utils')
 
 paymentRouter.post('/payment/create',userAuth, async(req, res)=>{
 
