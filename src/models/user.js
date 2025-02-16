@@ -60,6 +60,7 @@ const userSchema = new mongoose.Schema({
     },
     membershipType:{
         type:String,
+        
     },
     photoUrl :{
         type: String,
